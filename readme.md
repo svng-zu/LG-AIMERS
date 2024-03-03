@@ -4,6 +4,14 @@
 
 <br/>
 
+### 최종 결과
++ Public Score : 0.75611
++ Final Score : 0.76485
+
+#### 844팀 중 63위로 본선 진출 실패 (30위 팀 Final Score : 0.78086)
+
+<br/>
+
 ## 1. 개요
 <img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/f4681e5c-4aca-4dfa-b662-43d839d82d16" alt="preview" width="80%" height="80%">
 
@@ -40,6 +48,7 @@
 <img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/5d40481f-2a2b-4191-be82-bd957a022311" alt="data" width=50% height=50%>
 
 <br/>
+<br/>
 
 ## 3. 데이터 전처리
 
@@ -53,19 +62,20 @@
 <br/>
 
 #### 같은 의미의 다른 데이터는 같은 범주로 처리
--> etc, other, others -> etc
--> end-customer, end customer, end-user 등
++ etc, other, others $\rightarrow$ etc
+
++ end-customer, end customer, end-user 등
 
 <br/>
 
 #### 개수가 1개인 범주들을 기타 처리
--> 결측치와는 다르게 처리
++ 결측치와는 다르게 처리
 
 <br/>
 
 #### 결측치 처리
--> 수치형 데이터는 0 대체해도 무방 했음
--> 범주형은 None이라는 문자열로 범주처럼 처리
++ 수치형 데이터는 0 대체해도 무방 했음
++ 범주형은 None이라는 문자열로 범주처럼 처리
 
 <br/>
 
@@ -84,7 +94,7 @@ ML workflow을 자동화 하는 opensource library로 여러 머신러닝 task�
 # autoML 실행결과
 <img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/1571c80d-74b2-40ce-bf06-91e4caea475e" alt="data" width=70% height=70%>
 
-각 모델에 대해서 어떤 모델을, 몇 개를 조합할 것인지에 대한 실험이 필요
++ 각 모델에 대해서 어떤 모델을, 몇 개를 조합할 것인지에 대한 실험이 필요
 
 <br/>
 
@@ -97,7 +107,7 @@ ML workflow을 자동화 하는 opensource library로 여러 머신러닝 task�
 이를 그대로 학습하게 되면 False 클래스에 편향된 모델이 되기 때문에 오버 샘플링 / 언더 샘플링을 진행
 실험 결과 언더 샘플링의 F1-score가 더 높아 언더 샘플링을 진행
 
-정보 손실의 위험 ---> 앙상블 + 보팅으로 해결
+정보 손실의 위험 $\rightarrow$ 앙상블 + 보팅으로 해결
 
 <img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/cec9466f-2b4e-4ecc-9aae-41c4f86337ef" alt="data" width=50% height=50% left=0>
 
@@ -118,10 +128,10 @@ pubilc score 0.7
 <br/>
 
 ### 4. Voting
-언더 샘플링 시 정보손실의 문제가 있음.
-False 데이터 54449 개를 랜덤 셔플 후, 모두 20등분하고 True와 합쳐 클래스 비율이 1:1인 데이터셋 20개를 생성.
-각각 데이터셋의 모델에서의 결과를 확률로 받은 후 0, 1 클래스의 확률을 평균을 내어 최종 결과로 생성 (Soft voting)
-public score 0.02 정도 상승을 보임
++ 언더 샘플링 시 정보손실의 문제가 있음.
++ False 데이터 54449 개를 랜덤 셔플 후, 모두 20등분하고 True와 합쳐 클래스 비율이 1:1인 데이터셋 20개를 생성.
++ 각각 데이터셋의 모델에서의 결과를 확률로 받은 후 0, 1 클래스의 확률을 평균을 내어 최종 결과로 생성 (Soft voting)
+$\rightarrow$ public score 0.02 정도 상승을 보임
 
 <br/>
 
@@ -140,12 +150,8 @@ public score 0.02 정도 상승을 보임
 
 ### 모델 선택
 앞서 선택한 5개 모델 중 5개, 3개, 1개로 나누어 앙상블 후 가장 public score가 높은 모델 선택
--> 'xgb' 1개 사용시 가장 성능이 높음.
++ 'xgb' 1개 사용시 가장 성능이 높음.
 
 <br/>
 
-### 최종 결과
-Public Score : 0.75611
-Final Score : 0.76485
 
-844팀 중 63위로 본선 진출 실패 (30위 팀 Final Score : 0.78086)
