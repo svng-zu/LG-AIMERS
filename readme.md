@@ -19,8 +19,21 @@
 <br/>
 
 ## 1. 개요
-<img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/f4681e5c-4aca-4dfa-b662-43d839d82d16" alt="preview" width="80%" height="80%">
 
+#### [설명]
+<p/>
+MQL데이터를 활용하여 영업 기회 전환 고객을 선별하기 위한 AI모델 개발합니다.
+온라인 해커톤에서 교육생들의 문제 해결 능력을 검증하여 오프라인 해커톤에 진출할 약 100명을 선별하기 위한 과정입니다.
+
+#### [주최 / 주관]
++ 주최 : LG AI Research
++ 주관 : 엘리스그룹
++ 참여 : 한경닷컴
+
+#### [리더보드]
++ 평가 산식 : F1 score
++ Public score : 전체 테스트 데이터 샘플 중 사전 샘플링된 50%로 계산
++ Private score : Public score 계산에 포함되지 않은 나머지 50%의 테스트 데이터로 계산
 <br/>
 
 ## 2. EDA
