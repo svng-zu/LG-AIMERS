@@ -1,6 +1,12 @@
 # LG AIMERS 
 
 ### MQL 데이터 기반 B2B 영업기회 창출 예측 모델 개발
+<img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/4da0712d-7091-47c2-9dba-833e4577e5df" alt="team" width="1.5%" height="10%"> 송준호
+
+<img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/4da0712d-7091-47c2-9dba-833e4577e5df" alt="team" width="1.5%" height="10%"> 한지성
+
+<img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/4da0712d-7091-47c2-9dba-833e4577e5df" alt="team" width="1.5%" height="10%"> 황성주
+
 
 <br/>
 
