@@ -1,7 +1,9 @@
 # LG AIMERS MQL 데이터 기반 B2B 영업기회 창출 예측 모델 개발
+<br/>
 
 ## 1. 개요
 <img src="https://github.com/svng-zu/LG-AIMERS/assets/70852514/f4681e5c-4aca-4dfa-b662-43d839d82d16" alt="preview" width="80%" height="80%">
+<br/>
 
 ## 2. EDA
 ### 전체 데이터 확인
@@ -44,7 +46,7 @@
 -> 수치형 데이터는 0 대체해도 무방 했음
 -> 범주형은 None이라는 문자열로 범주처럼 처리
 
-
+<br/>
 ## 3. 모델링
 ### 모델 선택
 #### autoML - pycaret 사용
@@ -58,9 +60,9 @@ ML workflow을 자동화 하는 opensource library로 여러 머신러닝 task�
 
 각 모델에 대해서 어떤 모델을, 몇 개를 조합할 것인지에 대한 실험이 필요
 
-
+<br/>
 ## 4. 과적합 핸들링
-
+<br/>
 ### 1. 언더샘플링
 앞선 타겟 컬럼인 is_converted의 True와 False 값의 비율이 약 11:1로 클래스 불균형이 심한 상태.
 이를 그대로 학습하게 되면 False 클래스에 편향된 모델이 되기 때문에 오버 샘플링 / 언더 샘플링을 진행
@@ -88,8 +90,10 @@ public score 0.02 정도 상승을 보임
 모델 학습은 GridSearch를 이용
 
 
-
+<br/>
 ## 5. 결과
+<br/>
+
 ### 모델 선택
 앞서 선택한 5개 모델 중 5개, 3개, 1개로 나누어 앙상블 후 가장 public score가 높은 모델 선택
 -> 'xgb' 1개 사용시 가장 성능이 높음.
