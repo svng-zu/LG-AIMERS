@@ -97,7 +97,7 @@
 
 <br/>
 
-## 3. 모델링
+## 4. 모델링
 
 <br/>
 
@@ -116,7 +116,7 @@ ML workflow을 자동화 하는 opensource library로 여러 머신러닝 task�
 
 <br/>
 
-## 4. 과적합 핸들링
+## 5. 과적합 핸들링
 
 <br/>
 
@@ -161,7 +161,7 @@ $\rightarrow$ public score 0.02 정도 상승을 보임
 
 <br/>
 
-## 5. 결과
+## 6. 결과
 
 <br/>
 
