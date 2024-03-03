@@ -3,29 +3,29 @@
 ## 1. 개요
 기존 영업 데이터를 바탕으로 B2B 중 영업기회를 창출 했는지의 여부를 예측한다. <br/>
 이번 프로젝트에서는 창출 여부 예측과 과적합을 막는 것이 목표 <br/>
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/f4681e5c-4aca-4dfa-b662-43d839d82d16)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/f4681e5c-4aca-4dfa-b662-43d839d82d16){:width="50%" height="50%"}
 
 ## 2. EDA
 ### 전체 데이터 확인
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/9bae032e-b21f-42cf-bb43-fda2c30f461e)![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/06ec7602-f1b7-4223-9e87-240d15f620f9)
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/fc7496a8-71a4-4e15-9745-3ab54bb6fa59)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/9bae032e-b21f-42cf-bb43-fda2c30f461e)![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/06ec7602-f1b7-4223-9e87-240d15f620f9){:width="50%" height="50%"}
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/fc7496a8-71a4-4e15-9745-3ab54bb6fa59){:width="50%" height="50%"}
 #### 타겟 컬럼인 is_converted 열의 True와 False의 비율이 약 11: 1로 불균형이 있음을 알 수 있음
 
 ### 범주형 변수
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/fdb061c3-9a6c-4c4c-aa0f-f3c916246ef3)
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/ee3fd6df-0429-46b3-927c-ac8293a9e9bf)
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/c3bd18ae-8371-4e30-8cad-2c185750fd4c)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/fdb061c3-9a6c-4c4c-aa0f-f3c916246ef3){:width="50%" height="50%"}
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/ee3fd6df-0429-46b3-927c-ac8293a9e9bf){:width="50%" height="50%"}
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/c3bd18ae-8371-4e30-8cad-2c185750fd4c){:width="50%" height="50%"}
 
 ### 수치형 변수
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/ccff87f9-e838-4de0-aec4-47fe1caab7e8)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/ccff87f9-e838-4de0-aec4-47fe1caab7e8){:width="50%" height="50%"}
 #### 상관계수
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/5d40481f-2a2b-4191-be82-bd957a022311)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/5d40481f-2a2b-4191-be82-bd957a022311){:width="50%" height="50%"}
 
 ## 3. 데이터 전처리
 
 ### 컬럼 삭제
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/9049ec65-a8b9-4362-b942-d3723b4bc1f9)
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/0b20e0d1-c783-4a7f-a6d9-bcb66c09792e)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/9049ec65-a8b9-4362-b942-d3723b4bc1f9){:width="50%" height="50%"}
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/0b20e0d1-c783-4a7f-a6d9-bcb66c09792e){:width="50%" height="50%"}
 
 #### 같은 의미의 다른 데이터는 같은 범주로 처리
 -> etc, other, others -> etc
@@ -48,7 +48,7 @@ ML workflow을 자동화 하는 opensource library로 여러 머신러닝 task�
 
 
 # autoML 실행결과
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/1571c80d-74b2-40ce-bf06-91e4caea475e)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/1571c80d-74b2-40ce-bf06-91e4caea475e){:width="50%" height="50%"}
 
 각 모델에 대해서 어떤 모델을, 몇 개를 조합할 것인지에 대한 실험이 필요
 
@@ -76,7 +76,7 @@ False 데이터 54449 개를 랜덤 셔플 후, 모두 20등분하고 True와 �
 public score 0.02 정도 상승을 보임
 
 ### 진행했던 AB test
-![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/c13ca29e-1cb5-4f1a-a44a-db35272ee936)
+![image](https://github.com/svng-zu/LG-AIMERS/assets/70852514/c13ca29e-1cb5-4f1a-a44a-db35272ee936){:width="50%" height="50%"}
 모델 학습은 GridSearch를 이용
 ```
 
